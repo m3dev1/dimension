@@ -1354,6 +1354,16 @@ body.is-preload #bg:before {
 
 }
 
+/* SVG for header */
+
+svg {
+    /* Adjust based on desired size, scales with the container */
+    width: 50%;
+
+	/* Maintains the aspect ratio */
+    height: auto;
+}
+
 /* Header */
 
 #header {
@@ -1412,10 +1422,16 @@ body.is-preload #bg:before {
 #header .logo {
     width: 5.5rem;
     height: 5.5rem;
+
     line-height: 5.5rem;
     border: solid 1px #ffffff;
     border-radius: 100%;
     background-position: center;
+
+    /* Fix position of SVG to be centered and scale responsively */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #header .logo .icon:before {
