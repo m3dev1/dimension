@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
-        typeSpeed: 50, // Speed of typing
-        backSpeed: 25, // Speed of backspacing
+        typeSpeed: 25, // Speed of typing
+        backSpeed: 10, // Speed of backspacing
         backDelay: 1000, // Delay before backspacing
         startDelay: 500, // Delay before starting
         loop: true, // Infinite loop
