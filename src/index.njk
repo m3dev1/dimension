@@ -8,18 +8,19 @@ layout: 'base.njk'
     <!-- Header -->
     <header id="header">
         <div class="logo">
-            <!-- <span class="icon fa-keyboard"></span> -->
             <?xml version="1.0" encoding="utf-8"?>
             <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <svg width="40px" height="40px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.5C0 1.67157 0.671573 1 1.5 1H13.5C14.3284 1 15 1.67157 15 2.5V12.5C15 13.3284 14.3284 14 13.5 14H1.5C0.671573 14 0 13.3284 0 12.5V2.5ZM5.79293 7.50001L3.14648 4.85356L3.85359 4.14645L7.20714 7.50001L3.85359 10.8536L3.14648 10.1465L5.79293 7.50001ZM12 11H8V10H12V11Z" fill="#ffffff" />
             </svg>
         </div>
+			<!-- Navigation -->
+			{% include 'nav.njk' %}
         <div class="content">
             <div class="inner">
                 <div class="text-content">
 					<h1>Matthew Buckley</h1>
-					<h2>Site Reliability Engineer | DevOps Engineer | Software Engineer</h2>
+					<p class="title">Site Reliability Engineer | DevOps Engineer | Software Engineer</p>
 					<div id="typed-strings">
 						<span>Automator</span>
 						<span>Engineer</span>
@@ -40,21 +41,13 @@ layout: 'base.njk'
 					<span id="typed"></span>
 				</div>
 			</div>
-
-			<ul class="icons">
-				<li><a href="https://linkedin.com/in/m3dev1" target="_blank" class="icon brands fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
-				<li><a href="https://github.com/m3dev1" target="_blank" class="icon brands fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
-				<li><a href="mailto:career@automatt.sh" class="icon far fa-envelope-open" title="Email"><span class="label">Email</span></a></li>
-			</ul>
-
+			<hr>
 			<h2>Testimonials</h2>
 			<p>Here's what some awesome people have said about me.</p>
 
 			<div class="testimonial-container">
-			<div class="testimonial">
-				<div>
+				<div class="testimonial">
 					<img src="images/heidi.jpg" alt="Heidi Cupp, DevOps Manager" class="testimonial-img">
-				</div>
 				<div class="testimonial-text">
 					<p>"Matt is a true professional and a brilliant technologist who brings out the best in those around him. I wholeheartedly recommend him to any organization lucky enough to have him. His skill set, work ethic, and team spirit are rare finds in today's competitive landscape."</p>
 					<div class="author">
@@ -86,9 +79,9 @@ layout: 'base.njk'
 				</div>
 			</div>
 		</div>
+
 	</div>
-        <!-- Navigation -->
-        {% include 'nav.njk' %}
+
     </header>
 
     <!-- Main -->
