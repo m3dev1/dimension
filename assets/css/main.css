@@ -281,7 +281,7 @@ pre code {
 hr {
     border: 0;
     border-bottom: solid 1px #ffffff;
-    margin: 2.75rem 0;
+    margin: 1.5rem 0;
 }
 
 .align-left {
@@ -864,6 +864,7 @@ ul.icons {
     cursor: default;
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 ul.icons li {
@@ -886,11 +887,13 @@ ul.icons li a {
 }
 
 ul.icons li a:hover {
-    background-color: rgba(255, 255, 255, 0.075);
+    background-color: #3d4658e3
+    /* background-color: rgba(255, 255, 255, 0.075); */
 }
 
 ul.icons li a:active {
-    background-color: rgba(255, 255, 255, 0.175);
+    /* background-color: rgba(255, 255, 255, 0.175); */
+    background-color: #3d465867
 }
 
 /* Table */
@@ -1228,17 +1231,17 @@ svg {
     -ms-transition: opacity 0.325s ease-in-out;
     transition: opacity 0.325s ease-in-out;
     position: relative;
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
 }
 
 #header>*:before {
     content: '';
     display: block;
     position: absolute;
-    top: calc(-3.5rem - 1px);
+    top: calc(-1.5rem - 1px);
     left: calc(50% - 1px);
     width: 1px;
-    height: calc(3.5rem + 1px);
+    height: calc(1.5rem + 1px);
     background: #ffffff;
 }
 
@@ -1251,8 +1254,8 @@ svg {
 }
 
 #header .logo {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 3rem;
+    height: 3rem;
 
     line-height: 5.5rem;
     border: solid 1px #ffffff;
@@ -1286,9 +1289,8 @@ svg {
     -webkit-transition-delay: 0.25s;
     -ms-transition-delay: 0.25s;
     transition-delay: 0.25s;
-    padding: 3rem 2rem;
-    max-height: 40rem;
-    overflow: hidden;
+    padding: 2rem 2rem;
+    max-height: 100rem;
 }
 
 #header .content .inner> :last-child {
@@ -1416,9 +1418,9 @@ body.is-preload #header .content .inner {
     }
 
     #header .logo {
-        width: 4.75rem;
-        height: 4.75rem;
-        line-height: 4.75rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
     }
 
     #header .logo .icon:before {
@@ -1608,7 +1610,7 @@ body.is-preload #header .content .inner {
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
     width: 100%;
     max-width: 100%;
-    margin-top: 2rem;
+    margin: 0.5rem 0 0 0;
     text-align: center;
 }
 

@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: #336699;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
+
+.wrapper {
+    margin: 2rem 2rem 0 2rem;
+}
+
+.resume {
+    
+}
+
+/* Heading */
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    text-align: center;
+}
+
+.heading-left {
+    text-align: center;
+    /* font-size: 1rem; */
+    /* font-weight: 200; */
+}
+
+.heading-right {
+    /* justify-content: space-evenly; */
+    /* align-items: flex-end; */
+    margin: 1rem 0 1rem 0;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+}
+
+.experience {
+    
+}
+
+/* Experience */
+.job-title-and-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-title-1, .job-title-2, .job-title-3 {
+    justify-content: left;
+    font-weight: 600;
+    /* font-size: 1.25rem; */
+}
+
+.date {
+    text-align: right;
+}
+
+.company-and-location {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+/* Education */
+.education {
+    display: flex;
+    justify-content: space-between;
+}
+
+.degree-title-and-date {
+}
+
+.degree-title-1 {
+    font-weight: 600;
+}
+
+.accomplishments {
+    margin: 0;
+}
+
+/* Interests */
+.interests {
+    
+}
+
+/* Buttons */
+button {
+    color: var(--text-color) !important;
+    border: 1px solid var(--text-color);
+}
+
+button#download-pdf.download-pdf {
+    margin: 0 2rem 2rem 0;
+    padding: 0.25rem;
+    right: 1rem;
+    bottom: 1rem;
+    position: fixed;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+
+button#toggle-mode.toggle-mode {
+    margin: 2rem 2rem 0 0;
+    padding: 0.25rem;
+    position: fixed;
+    right: 1rem;
+    top: 0.5rem;
+    color: var(--text-color);
+    position: fixed;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+
+/* Heading tags */
+h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+
+}
+
+/* Lists */
+p, ul {
+    margin: 0 0 0.5rem 0;
+}
+
+.accomplishments, .accomplishments li {
+    margin: 0 0 0.5rem 0;
+}
+
+li {
+    margin: 0 0 0.05rem 0;
+}
+
+.icon {
+    font-size: 1rem;
+    /* margin: 0 0.5rem; */
+    /* padding: 0.5rem; */
+}
+
+.email, .phone, .website, .linkedin, .github, .city-state {
+    margin: 0 0.25rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+/* Print-Specific */
+@media print {
+    @page {
+        size: A4;
+        margin: 0rem;
+    }
+    .toggle-mode, .download-pdf {
+        display: none; /* Hide these buttons when printing */
+    }
+
+    li {
+        margin: 0 0 0.05rem 0;
+    }
+
+}
