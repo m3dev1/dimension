@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./images");
     // eleventyConfig.addPassthroughCopy("**/*.jpg");
 
-
+    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     // return object options in the object starting on the line below.
     return {
         dir: {
