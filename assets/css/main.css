@@ -1510,6 +1510,12 @@ body.is-preload #header .content .inner {
     z-index: 3;
 }
 
+#main a {
+    color: rgb(53, 157, 255);
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+}
+
 #main article {
     -moz-transform: translateY(0.25rem);
     -webkit-transform: translateY(0.25rem);
