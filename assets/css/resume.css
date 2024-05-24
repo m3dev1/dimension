@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", "Verdana", "Arial", sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
@@ -7,7 +7,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
     /* margin: 2rem 6% 4rem 6%; */
     max-width: 768px;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
 }
 
 a, a:link, a:visited, a:hover, a:active {
@@ -50,15 +50,9 @@ a, a:link, a:visited, a:hover, a:active {
     /* font-weight: 200; */
 }
 
-.heading-right {
-    /* justify-content: space-evenly; */
-    /* align-items: flex-end; */
-    margin: 1rem 0 1rem 0;
-}
-
 #name {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 600;
     margin: 0;
     padding: 0;
 }
@@ -78,9 +72,6 @@ a, a:link, a:visited, a:hover, a:active {
     margin: 0;
 }
 
-/* .experience {
-} */
-
 /* Experience */
 .job-title-and-date {
     display: flex;
@@ -90,7 +81,6 @@ a, a:link, a:visited, a:hover, a:active {
 .job-title {
     justify-content: left;
     font-weight: 600;
-    /* font-size: 1.25rem; */
 }
 
 .date {
@@ -108,9 +98,6 @@ a, a:link, a:visited, a:hover, a:active {
     display: flex;
     justify-content: space-between;
 }
-
-/* .degree-title-and-date {
-} */
 
 .degree-title {
     font-weight: 600;
@@ -144,7 +131,6 @@ button#download-pdf.download-pdf {
 
 button#toggle-mode.toggle-mode {
     margin: 0.5rem 0rem 0 0;
-    /* margin: 2rem 22% 1rem 0; */
     padding: 0.25rem;
     position: fixed;
     right: 1rem;
@@ -160,14 +146,13 @@ button#toggle-mode.toggle-mode {
 
 /* Heading tags */
 h3 {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
-
+    font-size: 1.25rem;
+    margin: 1rem 0 0.5rem 0;
 }
 
 /* Lists */
 p, ul {
-    margin: 0 0 0.5rem 0;
+    margin: 0;
 }
 
 .accomplishments, .accomplishments li {
@@ -175,7 +160,7 @@ p, ul {
 }
 
 li {
-    margin: 0 0 0.05rem 0;
+    margin: 0;
 }
 
 .icon {
@@ -212,7 +197,7 @@ li {
     }
 
     li {
-        margin: 0 0 0.05rem 0;
+        margin: 0;
     }
 
 }
