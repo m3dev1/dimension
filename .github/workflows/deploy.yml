@@ -35,7 +35,7 @@ jobs:
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         run: |
-          aws s3 sync ./_site s3://$AWS_S3_BUCKET --delete
+          aws s3 sync ./_site s3://$AWS_S3_BUCKET/_site --delete
 
       # Disable cloudfront invalidation temporarily for now.
       # - name: Invalidate CloudFront cache
