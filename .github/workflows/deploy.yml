@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
@@ -37,9 +37,8 @@ jobs:
         run: |
           aws s3 sync ./_site s3://$AWS_S3_BUCKET/_site --delete
 
-      # Disable cloudfront invalidation temporarily for now.
-      # - name: Invalidate CloudFront cache
-      #   env:
-      #     AWS_CLOUDFRONT_DISTRIBUTION_ID: YOUR_DISTRIBUTION_ID
-      #   run: |
-      #     aws cloudfront create-invalidation --distribution-id $AWS_CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+      - name: Invalidate CloudFront cache
+        env:
+          AWS_CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.AWS_CLOUDFRONT_ID }}
+        run: |
+          aws cloudfront create-invalidation --distribution-id $AWS_CLOUDFRONT_ID --paths "/*"
