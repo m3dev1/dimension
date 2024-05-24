@@ -56,14 +56,14 @@ a, a:link, a:visited, a:hover, a:active {
     margin: 1rem 0 1rem 0;
 }
 
-.name {
+#name {
     font-size: 1.5rem;
     font-weight: 800;
     margin: 0;
     padding: 0;
 }
 
-.title {
+#title {
     font-size: 1.25rem;
     font-weight: 400;
     margin: 0;
@@ -79,7 +79,6 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 /* .experience {
-    
 } */
 
 /* Experience */
@@ -88,7 +87,7 @@ a, a:link, a:visited, a:hover, a:active {
     justify-content: space-between;
 }
 
-.job-title-1, .job-title-2, .job-title-3 {
+.job-title {
     justify-content: left;
     font-weight: 600;
     /* font-size: 1.25rem; */
@@ -113,7 +112,7 @@ a, a:link, a:visited, a:hover, a:active {
 /* .degree-title-and-date {
 } */
 
-.degree-title-1 {
+.degree-title {
     font-weight: 600;
 }
 
@@ -123,7 +122,6 @@ a, a:link, a:visited, a:hover, a:active {
 
 /* Interests */
 /* .interests {
-    
 } */
 
 /* Buttons */
@@ -186,7 +184,7 @@ li {
     /* padding: 0.5rem; */
 }
 
-.email, .phone, .website, .linkedin, .github, .city-state {
+#email, #phone, #website, #linkedin, #github, #city-state {
     margin: 0 0.5rem;
 }
 
