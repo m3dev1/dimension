@@ -1,6 +1,12 @@
 <article id="projects">
     <h2 class="major">Projects</h2>
     <span class="image main"><img src="images/projects.png" alt="Projects" /></span>
+    <h3 class="minor">Terraform-AutoMatt</h3>
+    <p>GitHub repo: <a href="https://github.com/m3dev1/terraform-automatt" target="_blank">terraform-automatt</a></p>
+    <p>As a way to test my AWS and Terraform knowledge, I built my primarily AWS infrastructure for <a href="https://automatt.sh" target="_blank">AutoMatt.sh</a> using Infrastructure as Code (IAC) with Terraform.</p>
+    <p>While the project was ultimately successful, it was full of its own unique challenges, such as switching from ACLs to Origin Access Control, and learning that Origin Access Identity is not the same thing.</p>
+    <p><em>Technologies used: Terraform, CloudFlare, cf-terraforming, AWS (S3, Origin Access Control, Certificate Manager, CloudFront CDN</em></p>
+    <hr>
     <h3 class="minor">AutoMatt.sh</h2>
     <p>Inspired by the <a href="https://cloudresumechallenge.dev/" target="_blank">Cloud Resume Challenge</a>, I built this website to host my portfolio, resume, and contact information. I decided to take it a step further than the simple S3 static website by adding the use of OAC (Origin Access Control) for additional security, Certificate Manager for SSL/TLS certs, combined with Lambda and SES (Simple Email Service) for handling the contact form and some extra security layers within.</p>
     <p>Admittedly, using all of these AWS services was entirely overkill, but the experience was still enjoyable to learn from and helped further strengthen my knowledge in AWS.</p>
