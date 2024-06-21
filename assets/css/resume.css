@@ -147,6 +147,7 @@ button#toggle-mode.toggle-mode {
 /* Heading tags */
 h3 {
     font-size: 1.15rem;
+    color: #336699;
     margin: 1rem 0 0.5rem 0;
 }
 
